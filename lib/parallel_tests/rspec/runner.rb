@@ -36,7 +36,7 @@ module ParallelTests
         end
 
         def test_suffix
-          /_spec\.rb$/
+          `/_spec\.rb$|\.feature$/`
         end
 
         def line_is_result?(line)
